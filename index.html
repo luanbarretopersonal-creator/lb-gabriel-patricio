@@ -26,7 +26,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(13,13,13,0.9
 .nav-title{font-family:'Cormorant Garamond',serif;font-size:14px;font-weight:600;color:var(--white);letter-spacing:1px;line-height:1.2;}
 .nav-title span{color:var(--gold);display:block;font-size:9px;font-family:'Montserrat',sans-serif;font-weight:400;letter-spacing:2px;text-transform:uppercase;}
 .nav-right{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:8px 0;}
-.nav-tabs{display:flex;gap:3px;flex-wrap:wrap;}
+.nav-tabs{display:flex;gap:3px;overflow-x:auto;-webkit-overflow-scrolling:touch;flex-wrap:nowrap;flex:1;min-width:0;padding:8px 0;scrollbar-width:none;}
 .tab-btn{background:none;border:1px solid transparent;color:var(--white-dim);font-family:'Montserrat',sans-serif;font-size:9px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;padding:7px 11px;cursor:pointer;border-radius:2px;transition:all 0.3s;white-space:nowrap;}
 .tab-btn:hover{color:var(--gold);border-color:var(--border);}
 .tab-btn.active{color:var(--gold);border-color:var(--gold);background:var(--gold-dim);}
@@ -760,7 +760,7 @@ textarea.q-input{resize:vertical;min-height:80px;}
     <button onclick="qEnviarWhatsapp()" style="background:linear-gradient(135deg,#a07830,var(--gold));border:none;border-radius:4px;color:#0a0800;font-family:'Montserrat',sans-serif;font-size:13px;font-weight:700;letter-spacing:1px;padding:16px 40px;cursor:pointer;">📱 Enviar pelo WhatsApp</button>
   </div>
 </section>
-<section id="apresentacao" class="section">
+<section id="apresentacao" class="section active">
   <div class="client-hero">
     <div class="hero-bg-img"></div>
     <div class="hero-overlay"></div>
@@ -1191,172 +1191,6 @@ textarea.q-input{resize:vertical;min-height:80px;}
   </div>
 </section>
 
-<section id="biblioteca" class="section">
-  <div class="section-header"><h2>Biblioteca de <span>Conscientização</span></h2><div class="section-line"></div></div>
-  <p style="font-size:11px;color:var(--white-dim);margin-bottom:28px;line-height:1.8;">Conteúdo educativo para aprofundar seu entendimento sobre saúde, comportamento, nutrição e treino. Assista no seu tempo, no seu ritmo.</p>
-
-  <!-- COMPORTAMENTO E MENTALIDADE -->
-  <div class="biblio-block">
-    <div class="biblio-block-title">🧠 Comportamento e Mentalidade</div>
-
-    <div class="biblio-item">
-      <div class="biblio-tag">🔁 Consistência e Hábitos</div>
-      <p>Talento sem consistência não gera resultado. O que transforma o corpo é a repetição de escolhas simples, feitas todo dia — independente da motivação. Rotina bate inspiração. Sempre.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;">
-        <a href="https://www.instagram.com/p/DW93J9PEY5t/" target="_blank" class="ig-link">▶ Consistência e hábitos</a>
-        <a href="https://www.instagram.com/reel/DOuEqB8kWUe/" target="_blank" class="ig-link">▶ Constância vence intensidade</a>
-        <a href="https://www.instagram.com/reel/DN1T1hF4gf-/" target="_blank" class="ig-link">▶ Hábitos fixos e rotina</a>
-      </div>
-    </div>
-
-    <div class="biblio-item">
-      <div class="biblio-tag">🏠 Mentalidade e Ambiente</div>
-      <p>O ambiente que você vive molda seus comportamentos antes mesmo de você decidir conscientemente. Organizar o que te rodeia — geladeira, rotina, companhias — é parte fundamental da estratégia de emagrecimento.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;">
-        <a href="https://www.instagram.com/p/DWSGXHyFGhb/" target="_blank" class="ig-link">▶ Mentalidade e ambiente</a>
-      </div>
-    </div>
-
-    <div class="biblio-item">
-      <div class="biblio-tag">🌱 Hábitos de Saúde Sustentáveis</div>
-      <p>Não adianta fazer tudo certo por 2 semanas e abandonar. Resultados reais vêm de rotinas que cabem na sua vida. O objetivo é construir hábitos que você vai manter — não passar por mais uma dieta.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;">
-        <a href="https://www.instagram.com/p/DWZLg9SEfZc/" target="_blank" class="ig-link">▶ Construindo rotina sustentável</a>
-      </div>
-    </div>
-
-    <div class="biblio-item">
-      <div class="biblio-tag">⚡ Motivação vs Disciplina</div>
-      <p>Motivação vem e vai. No dia que você não quer treinar, não quer comer certo — é aí que a disciplina entra. Quem depende de motivação para agir, para quando ela acaba. Quem construiu disciplina, continua.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;">
-        <a href="https://www.instagram.com/p/DXKBobYjNkF/" target="_blank" class="ig-link">▶ Motivação vs Disciplina</a>
-        <a href="https://www.instagram.com/reel/DOgG7RTkYOx/" target="_blank" class="ig-link">▶ Não espere o momento perfeito</a>
-      </div>
-    </div>
-
-    <div class="biblio-item">
-      <div class="biblio-tag">🍽️ Gestão Emocional e Alimentação</div>
-      <p>Comer por ansiedade, por tédio, por estresse — é mais comum do que parece. Entender seus gatilhos emocionais é tão importante quanto saber a dieta. Antes de comer fora do plano, pergunte: estou com fome ou com outro sentimento?</p>
-      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;">
-        <a href="https://www.instagram.com/p/DW7MV5CEZjm/" target="_blank" class="ig-link">▶ Gestão emocional e comida</a>
-        <a href="https://www.instagram.com/p/DHnxe5kxiT3/" target="_blank" class="ig-link">▶ Atacar a geladeira à noite</a>
-        <a href="https://www.instagram.com/p/DFL_eyYPhad/" target="_blank" class="ig-link">▶ Controle comportamental com a comida</a>
-      </div>
-    </div>
-
-    <div class="biblio-item">
-      <div class="biblio-tag">💆 Autoconhecimento e Autocuidado</div>
-      <p>Conhecer seus limites não é fraqueza — é inteligência. Saber quando descansar, quando forçar, quando pedir ajuda faz parte do processo. Autocuidado não é opcional: é o que sustenta tudo o mais.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;">
-        <a href="https://www.instagram.com/p/DWUvaQrkQht/" target="_blank" class="ig-link">▶ Autoconhecimento e autocuidado</a>
-      </div>
-    </div>
-
-    <div class="biblio-item">
-      <div class="biblio-tag">😴 Sono e Recuperação</div>
-      <p>O corpo não evolui no treino — evolui no descanso. Sono de 7 a 9 horas por noite regula cortisol, ghrelina (hormônio da fome), sensibilidade à insulina e recuperação muscular. Dormir mal é treinar em vão.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;">
-        <a href="https://www.instagram.com/p/DWjbGPZkSUK/" target="_blank" class="ig-link">▶ Sono e recuperação</a>
-      </div>
-    </div>
-
-    <div class="biblio-item">
-      <div class="biblio-tag">🔎 Consciência e Persistência</div>
-      <p>Emagrecer não depende só de déficit calórico — depende de saúde metabólica, hormonal e comportamental. Se você errar, volta ao plano na próxima refeição. Não compensa, não pune, não dramatiza. Só volta.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;">
-        <a href="https://www.instagram.com/p/DFumgRnRBgR/" target="_blank" class="ig-link">▶ Emagrecer não é só déficit</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- NUTRIÇÃO -->
-  <div class="biblio-block">
-    <div class="biblio-block-title">🥗 Nutrição</div>
-
-    <div class="biblio-item">
-      <div class="biblio-tag">💊 Creatina</div>
-      <p>A creatina é um dos suplementos mais estudados e eficazes. Aumenta força, volume de treino e recuperação muscular. Para mulheres com SOP, há evidências de benefício adicional na sensibilidade à insulina. Use 5g ao dia, todo dia, sem necessidade de parar.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;">
-        <a href="https://www.instagram.com/p/DXE4EcfEbUY/" target="_blank" class="ig-link">▶ O que é creatina e como usar</a>
-        <a href="https://www.instagram.com/p/DI1V0hqRXMQ/" target="_blank" class="ig-link">▶ Benefícios da creatina</a>
-      </div>
-    </div>
-
-    <div class="biblio-item">
-      <div class="biblio-tag">🚫 Álcool e Dieta</div>
-      <p>O álcool paralisa a queima de gordura enquanto é metabolizado. Além disso, aumenta o apetite, prejudica o sono, eleva o cortisol e piora a sensibilidade à insulina — fator especialmente crítico na SOP. Não é proibido para sempre, mas no momento atual, quanto menos, melhor.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;">
-        <a href="https://www.instagram.com/p/DKfPkmzvpD9/" target="_blank" class="ig-link">▶ Álcool e dieta — impacto real</a>
-        <a href="https://www.instagram.com/p/DI4b3FnSxAz/" target="_blank" class="ig-link">▶ Álcool no final de semana</a>
-        <a href="https://www.instagram.com/p/DH1zPPIvjfl/" target="_blank" class="ig-link">▶ Os prejuízos do álcool</a>
-      </div>
-    </div>
-
-    <div class="biblio-item">
-      <div class="biblio-tag">⚡ Déficit Calórico</div>
-      <p>O déficit calórico é a base matemática do emagrecimento — mas não é suficiente sozinho. A qualidade dos alimentos, o volume de treino e o controle hormonal determinam se você perde gordura ou músculo. Déficit inteligente, não agressivo.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;">
-        <a href="https://www.instagram.com/p/DI1V0hqRXMQ/" target="_blank" class="ig-link">▶ Déficit calórico na prática</a>
-      </div>
-    </div>
-
-    <div class="biblio-item">
-      <div class="biblio-tag">🥩 Modo de Preparo e Criatividade</div>
-      <p>Monotonia alimentar é inimiga da adesão. O mesmo frango pode ser grelhado, desfiado, assado, em cubos ou teriyaki. A batata pode ser cozida, assada, purê ou airfryer. Use a criatividade a seu favor — o alimento é o mesmo, a experiência muda tudo.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;">
-        <a href="https://www.instagram.com/reel/DIzjTBhSr95/" target="_blank" class="ig-link">▶ Organização alimentar</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- TREINO E PERFORMANCE -->
-  <div class="biblio-block">
-    <div class="biblio-block-title">💪 Treino e Performance</div>
-
-    <div class="biblio-item">
-      <div class="biblio-tag">🏋️ Estrutura de Treino</div>
-      <p>Entender por que você faz cada exercício em cada ordem muda sua relação com o treino. Cada bloco tem uma função — força, volume, pump — e a sequência importa porque sua energia e foco são limitados. Execute com intenção.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;">
-        <a href="https://www.instagram.com/p/DW93J9PEY5t/" target="_blank" class="ig-link">▶ Estrutura de treino full body</a>
-        <a href="https://www.instagram.com/reel/DHqfIjkxlM7/" target="_blank" class="ig-link">▶ Constância no treino</a>
-      </div>
-    </div>
-
-    <div class="biblio-item">
-      <div class="biblio-tag">⚖️ Força vs Hipertrofia</div>
-      <p>Força e hipertrofia não são opostos — são complementares. Treinar para ficar mais forte aumenta o potencial de crescimento muscular. No Método BCA, o Bloco Base treina força, o Complementar usa essa força para gerar volume, e o Auxiliar finaliza com pump.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;">
-        <a href="https://www.instagram.com/p/DWSGXHyFGhb/" target="_blank" class="ig-link">▶ Força vs Hipertrofia</a>
-      </div>
-    </div>
-
-    <div class="biblio-item">
-      <div class="biblio-tag">🔄 CrossFit e Musculação</div>
-      <p>Você faz os dois — e isso é uma vantagem. O Cross desenvolve capacidade aeróbica, potência e variabilidade. A musculação garante sobrecarga progressiva e preservação muscular. Juntos, criam o ambiente metabólico ideal para o emagrecimento com saúde.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;">
-        <a href="https://www.instagram.com/p/DWZLg9SEfZc/" target="_blank" class="ig-link">▶ CrossFit vs academia</a>
-      </div>
-    </div>
-
-    <div class="biblio-item">
-      <div class="biblio-tag">🚴 Cardio — Como, Quando e Quanto</div>
-      <p>Meta: 200 minutos por semana. Não precisa ser intenso — consistência importa mais do que zona de frequência cardíaca. Pode ser feito em jejum, depois do treino ou em qualquer momento do dia. O que não pode é não fazer.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;">
-        <a href="https://www.instagram.com/p/DXKBobYjNkF/" target="_blank" class="ig-link">▶ Cardio — qual, quando e quanto</a>
-        <a href="https://www.instagram.com/reel/DOY2YvMEbxP/" target="_blank" class="ig-link">▶ Benefícios do cardio</a>
-      </div>
-    </div>
-
-    <div class="biblio-item">
-      <div class="biblio-tag">⏱ Aquecimento e Progressão de Carga</div>
-      <p>A 1ª série de cada exercício é de aquecimento — carga menor, sem falha, 12 a 15 reps. Ela prepara o músculo, a articulação e o sistema nervoso. Da 2ª em diante, progrida a carga até encontrar a que leva à falha dentro das reps prescritas.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;">
-        <a href="https://www.instagram.com/reel/DIzjTBhSr95/" target="_blank" class="ig-link">▶ Organização e progressão</a>
-        <a href="https://www.instagram.com/reel/DIMBid0xe7D/" target="_blank" class="ig-link">▶ Descanso entre séries</a>
-      </div>
-    </div>
-  </div>
-</section>
 <section id="evolucao" class="section">
   <div class="section-header"><h2>Histórico de <span>Evolução</span></h2><div class="section-line"></div></div>
 
@@ -2162,23 +1996,7 @@ function getVideoLink(name) {
   return bestScore >= 2 ? best : null;
 }
 
-function resolveVideoLinks() {
-  document.querySelectorAll('.yt-link[data-exercise]').forEach(a => {
-    const ex = a.getAttribute('data-exercise');
-    const url = getVideoLink(ex);
-    if (url) {
-      a.href = url;
-      a.target = '_blank';
-      a.innerHTML = '▶ VER';
-      a.style.color = '#C9A84C';
-      a.style.borderColor = 'rgba(201,168,76,0.5)';
-    } else {
-      a.style.opacity = '0.25';
-      a.removeAttribute('href');
-    }
-  });
-}
-document.addEventListener('DOMContentLoaded', resolveVideoLinks);
+// (removido: match automático antigo de vídeos — agora todos usam href direto)
 
 
 // ── NAVEGAÇÃO ──
